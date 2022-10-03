@@ -6,7 +6,7 @@
     --oragen: #f39c12;
     --white: #fff;
     --black: #2c3e50; 
-    --light: #888;
+    --light-color: #888;
     --light-bg: #eee;
     --border: .1rem solid rgba(0, 0, 0, .2);
 }
@@ -48,6 +48,14 @@ html {
 body {
     background-color: var(--light-bg);
     padding-left: 30rem;
+}
+
+body.dark {
+    --white: #222;
+    --black: #fff; 
+    --light-color: #aaa;
+    --light-bg: #333;
+    --border: .1rem solid rgba(255, 255, 255, .2);
 }
 
 body.active {
@@ -238,7 +246,7 @@ section {
 }
 
 .header .flex .profile span {
-    color: var(--light);
+    color: var(--light-color);
     font-size: 1.6rem;
 }
 
@@ -295,7 +303,7 @@ section {
 }
 
 .side-bar .profile span {
-    color: var(--light);
+    color: var(--light-color);
     font-size: 1.6rem;
 }
 
@@ -313,7 +321,7 @@ section {
 }
 
 .side-bar .navbar span {
-    color: var(--light);
+    color: var(--light-color);
 }
 
 .side-bar .navbar a:hover {
@@ -350,7 +358,7 @@ section {
 .quick-select .box-container .box p {
     line-height: 1.5;
     padding-top: 1.5rem;
-    color: var(--light);
+    color: var(--light-color);
     font-size: 1.8rem;
 }
 
@@ -386,7 +394,7 @@ section {
 }
 
 .quick-select .box-container .box .flex a span {
-    color: var(--light);
+    color: var(--light-color);
 }
 
 .quick-select .box-container .box .flex a:hover {
@@ -437,7 +445,7 @@ section {
 
 .courses .box-container .box .tutor span {
     font-size: 1.5rem;
-    color: var(--light);
+    color: var(--light-color);
 }
 
 .courses .box-container .box .thumb {
